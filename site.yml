@@ -1,0 +1,12 @@
+---
+- name: 앤서블 yaml 파일
+  hosts: all
+  tasks:
+   - name: 디렉토리 생성
+     file:
+       path: /home/tasks/
+       state: directory
+       owner: root
+       group: root
+       mode: 0775
+
